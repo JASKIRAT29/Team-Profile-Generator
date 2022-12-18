@@ -4,10 +4,10 @@ const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
-const addManagerCard = require('./src/card-manager');
-const addEngineerCard = require('./src/card-engineer');
-const addInternCard = require('./src/card-intern');
-const wrapProfileCards = require('./src/card-wrapper');
+const addManagerCard = require('./src/src-manager');
+const addEngineerCard = require('./src/src-engineer');
+const addInternCard = require('./src/src-intern');
+const wrapProfileCards = require('./src/src-employee');
 
 // Array to hold all team members
 const team = [];
@@ -32,11 +32,6 @@ const addManager = [
         type: 'input',
         name: 'officeNumber',
         message: 'Enter the office number:',
-      },
-      {
-        type: 'input',
-        name: 'GitHub',
-        message: 'What is your GitHub username?'
       },
       {
         name: 'upNext',
@@ -114,6 +109,7 @@ function ask(questionArr) {
       .prompt(questionArr)
       .then((member) => {
         team.push(member);
+        console.log (team);
   
         if (member.upNext === 'Add Engineer') {
           ask(addEngineer);
@@ -134,8 +130,8 @@ function createProfiles(team) {
   
       // If statement
       if (member.hasOwnProperty('officeNumber')) {
-        const { officeNumber } = member;
-        return new Manager(name, id, email, officeNumber);
+        const { managerName, managerId ,managerEmail,officeNumber } = member;
+        return new Manager(managerName, managerId ,managerEmail,officeNumber);
       }
       if (member.hasOwnProperty('github')) {
         const { github } = member;
