@@ -1,6 +1,4 @@
 # Team-Profile-Generator
-# Team-Profile-Generator
-
 Description
 The Team profile Generator is created to generate a team profile based on user input using the Inquirer module from Node.js and displaying the information on a newly created html page with a style sheet. In this application, the user is able to add a Manager, an Engineer, and an Intern to their team. From there, a functional and professionally formatted HTML document is rendered to the dist folder.
 
