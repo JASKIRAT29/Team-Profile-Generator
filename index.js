@@ -155,7 +155,7 @@ function generateHtml(profiles) {
 
 // Function to write the final HTML document in dist folder
 function writeHtml(newHtml) {
-  fs.writeFile('./dist/team-profile.html', newHtml, (err) => {
+  fs.writeFile('./dist/index.html', newHtml, (err) => {
     if (err) throw err;
     console.log('HTML document successfully created in the /dist folder.');
   });
