@@ -29,4 +29,4 @@ const cardWrapper = (cards) => `
     </main>
   </body>
   </html>
-`;module.exports = cardWrapper;
+`; module.exports = cardWrapper;
