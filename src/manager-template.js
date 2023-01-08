@@ -25,4 +25,4 @@ const managerCard = (profile) => `
       </ul>
     </div>
   </div>
-`;module.exports = managerCard;
+`; module.exports = managerCard;
