@@ -22,8 +22,10 @@ If testing is required, this application uses Jest.
 
 # Usage
 Use inquirer from your command line to answer questions about your project. View walk through video here
--https://watch.screencastify.com/v/ie4dtA4CKAPzYS47y8rK
-![SCREENSHOT](https://user-images.githubusercontent.com/114631240/208318895-00a25dac-0525-4222-b8f0-eeadaf97fbbd.jpeg)
+-https://watch.screencastify.com/v/tKLd8ifHiEor1pqcoxIS
+
+![Web capture_8-1-2023_133311_127 0 0 1](https://user-images.githubusercontent.com/114631240/211212857-fad188f3-fe6c-4726-af67-fc663bbc1afa.jpeg)
+
 
 # License
 This project is license under MIT
